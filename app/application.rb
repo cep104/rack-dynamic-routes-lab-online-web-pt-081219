@@ -4,7 +4,7 @@ class Application
     resp = Rack::Response.new
     req = Rack::Request.new(env)
  
-    @@songs.each do |song|
+    @@items.each do |song|
       resp.write "#{song.title}\n"
     end
  
